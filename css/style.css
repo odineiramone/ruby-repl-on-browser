@@ -1,0 +1,18 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+}
+
+.code {
+  position: relative;
+  height: 45%;
+}
+
+.CodeMirror {
+  height: 100%;
+}
