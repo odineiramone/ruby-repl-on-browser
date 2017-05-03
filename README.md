@@ -7,7 +7,6 @@ Now it works with Sinatra!
 1. ` bundle install `
 2. ` ruby application.rb `
 3. Visit ` localhost:4567 `
-4. Press ` ç ` to open web console
 
 Or you can see it on [heroku](https://pacific-gorge-33451.herokuapp.com/)
 
