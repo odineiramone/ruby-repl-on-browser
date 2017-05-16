@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/namespace'
 require 'json'
+require 'pry'
 
 get '/' do
   erb :index
