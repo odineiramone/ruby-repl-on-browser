@@ -16,10 +16,34 @@
         <button type="button" class="btn btn-info">Clean editor <span class="glyphicon glyphicon-erase"></span></button>
       </div>
       <div class="code">
-        <textarea autofocus class="codemirror-textarea" id="code"></textarea>
+        <textarea autofocus class="codemirror-textarea" id="code">
+# The Greeter class
+class Greeter
+  attr_writer :name
+  def initialize(name)
+    @name = name.capitalize
+  end
+
+  def salute
+    puts "Hello #{@name}!"
+  end
+end
+
+# Create a new object
+g = Greeter.new("world")
+
+# Output "Hello World!"
+g.salute
+
+# put your name here!
+g.name = "Your name here!"
+
+# hello visitor
+g.salute
+        </textarea>
       </div>
       <div class="terminal2">
-        <textarea name="terminal" id="terminal"></textarea>
+        <textarea name="terminal" id="terminal" spellcheck="false"></textarea>
       </div>
     </div>
 
