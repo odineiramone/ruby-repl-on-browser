@@ -11,12 +11,13 @@
   </head>
   <body>
     <div class="content">
-      <div class="buttons">
-        <button type="button" class="btn btn-success" id="compile" onclick="mandaEsseTrecoPraFora()">Compile <span class="glyphicon glyphicon-play"></span></button>
-        <button type="button" class="btn btn-info">Clean editor <span class="glyphicon glyphicon-erase"></span></button>
-      </div>
-      <div class="code">
-        <textarea autofocus class="codemirror-textarea" id="code">
+      <form class="" action="/api/ruby" method="post">
+        <div class="buttons">
+          <button type="submit" class="btn btn-success" id="compile" onclick="">Compile <span class="glyphicon glyphicon-play"></span></button>
+          <button type="button" class="btn btn-info">Clean editor <span class="glyphicon glyphicon-erase"></span></button>
+        </div>
+        <div class="code">
+          <textarea autofocus class="codemirror-textarea" id="code" name="code">
 # The Greeter class
 class Greeter
   attr_writer :name
@@ -40,8 +41,9 @@ g.name = "Your name here!"
 
 # hello visitor
 g.salute
-        </textarea>
-      </div>
+          </textarea>
+        </div>
+      </form>
       <div class="terminal2">
         <textarea name="terminal" id="terminal" spellcheck="false"></textarea>
       </div>
