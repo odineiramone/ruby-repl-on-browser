@@ -13,6 +13,8 @@ namespace '/api' do
                   #{params[:cmd]}; $stdout.string;
                   ensure $stdout = STDOUT end")
 
+    result += "=> " + (eval(params[:cmd]).to_s || 'nil')
+
     payload = { result: result }
     return payload.to_json
   end

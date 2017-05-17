@@ -8,7 +8,7 @@ function mandaEsseTrecoPraFora() {
         var http = new XMLHttpRequest();
         var url = "/api/ruby";
 
-        var params = "cmd=" + command;
+        var params = "cmd=" + encodeURIComponent(command);
 
         http.open("POST", url, false);
         http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
