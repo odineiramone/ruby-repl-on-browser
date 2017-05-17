@@ -1,13 +1,7 @@
 require 'sinatra'
 require 'sinatra/namespace'
 require 'json'
-# require 'pry'
-
-module Kernel
-  remove_method :exec
-  remove_method :system
-  remove_method :`
-end
+require './kernel.rb'
 
 get '/' do
   erb :index
@@ -19,7 +13,7 @@ namespace '/api' do
                   #{params[:cmd]}; $stdout.string;
                   ensure $stdout = STDOUT end")
 
-    result += "=> " + (eval(params[:cmd]).to_s || 'nil')
+    result += '=> ' + (eval(params[:cmd]) || 'nil').to_s
 
     payload = { result: result }
     return payload.to_json

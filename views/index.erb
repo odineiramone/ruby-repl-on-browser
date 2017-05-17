@@ -12,46 +12,32 @@
   <body>
     <div class="content">
       <div class="buttons">
-        <button type="button" class="btn btn-success" id="compile" onclick="mandaEsseTrecoPraFora()">Compile <span class="glyphicon glyphicon-play"></span></button>
-        <button type="button" class="btn btn-info">Clean editor <span class="glyphicon glyphicon-erase"></span></button>
+        <button type="button" class="btn btn-success" id="compile" onclick="mandaEsseTrecoPraFora()">Run code <span class="glyphicon glyphicon-play"></span></button>
+        <button type="button" class="btn btn-info" onclick="editor.setValue(' ')">Clean editor <span class="glyphicon glyphicon-erase"></span></button>
+        <button type="button" class="btn btn-danger" onclick="cleanTerminal();">Clean terminal <span class="glyphicon glyphicon-remove"></span></button>
+        Choose an example here
+        <select id="codes" onchange="loadCode(this);">
+          <option id="hello">Hello World</option>
+          <option id="greet">Greettings</option>
+          <option id="fizz">FizzBuzz</option>
+          <option id="love">Ruby Love</option>
+          <option id="array">Play with arrays</option>
+        </select>
       </div>
       <div class="code">
-        <textarea autofocus class="codemirror-textarea" id="code">
-# The Greeter class
-class Greeter
-  attr_writer :name
-  def initialize(name)
-    @name = name.capitalize
-  end
-
-  def salute
-    puts "Hello #{@name}!"
-  end
-end
-
-# Create a new object
-g = Greeter.new("world")
-
-# Output "Hello World!"
-g.salute
-
-# put your name here!
-g.name = "Your name here!"
-
-# hello visitor
-g.salute
-        </textarea>
+        <textarea autofocus class="codemirror-textarea" id="code">puts 'Hello World!'</textarea>
       </div>
       <div class="terminal2">
-        <textarea name="terminal" id="terminal" spellcheck="false"></textarea>
+        <textarea readonly="true" name="terminal" id="terminal" spellcheck="false"></textarea>
       </div>
     </div>
+
 
     <!-- javascript  -->
     <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
     <script type="text/javascript" src="codemirror/plugin/codemirror/mode/ruby/ruby.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/default.js"></script>
-    <script type="text/javascript" src="js/console.jquery.js"></script>
+    <script type="text/javascript" src="js/console.js"></script>
   </body>
 </html>
