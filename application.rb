@@ -1,7 +1,13 @@
 require 'sinatra'
 require 'sinatra/namespace'
 require 'json'
-require 'pry'
+# require 'pry'
+
+module Kernel
+  remove_method :exec
+  remove_method :system
+  remove_method :`
+end
 
 get '/' do
   erb :index
