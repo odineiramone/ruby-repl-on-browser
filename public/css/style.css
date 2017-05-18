@@ -22,11 +22,12 @@ html, body {
 
 .terminal2 textarea {
   font-family: tahoma, arial, sans-serif;
+  font-weight: bolder;
   resize: none;
   border: 0;
   padding: 15px;
   background-color: #222831;
-  color: white;
+  color: #eee;
   height: 100%;
   width: 100%;
 }

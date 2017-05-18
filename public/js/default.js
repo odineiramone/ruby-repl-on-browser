@@ -6,6 +6,7 @@ $(document).ready(function(){
     lineNumbers : true,
     lineWrapping : true,
     mode : "ruby",
-    theme : "monokai"
+    theme : "monokai",
+    tabSize : '2'
   });
 });
