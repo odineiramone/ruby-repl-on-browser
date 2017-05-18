@@ -8,11 +8,15 @@ end
 
 class Commander
   def execute(command)
-    raise ForbiddenMethodError if command =~ /eval( |\()/
+    raise ForbiddenMethodError if command =~ /(eval|File|Dir)( |\(|\.)/
 
-    result = eval("begin $stdout = StringIO.new;
-                  #{command}; $stdout.string;
-                  ensure $stdout = STDOUT end")
+    result = eval("begin
+                    $stdout = StringIO.new;
+                    #{command};
+                    $stdout.string;
+                  ensure
+                    $stdout = STDOUT
+                  end")
 
     result += '=> ' + (eval(command) || 'nil').to_s
     result
