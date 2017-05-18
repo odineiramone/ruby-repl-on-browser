@@ -8,7 +8,7 @@ end
 
 class Commander
   def execute(command)
-    raise ForbiddenMethodError if command =~ /(eval|File|Dir)( |\(|\.)/
+    raise ForbiddenMethodError if command =~ /(eval|File|Dir|require)( |\(|\.)/
 
     result = eval("begin
                     $stdout = StringIO.new;
