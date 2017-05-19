@@ -1,23 +1,23 @@
 html, body {
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .content {
   position: relative;
-  height: 100%;
+  height: 80%;
 }
 
 .code {
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 49.9%;
   float: left;
 }
 
 .terminal2 {
   float: right;
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 49.9%;
 }
 
 .terminal2 textarea {
@@ -38,4 +38,30 @@ html, body {
 
 .buttons {
   padding: 10px;
+}
+
+.navbar {
+  margin: 0 auto;
+  border: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li {
+  margin: 0 auto;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: default;
 }
