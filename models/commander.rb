@@ -11,9 +11,7 @@ class Commander
     raise ForbiddenMethodError if command =~ /(eval|File|Dir|require)( |\(|\.)/
 
     result = eval("begin
-                    $stdout = StringIO.new;
-                    #{command};
-                    $stdout.string;
+                    $stdout = StringIO.new; #{command}; $stdout.string;
                   ensure
                     $stdout = STDOUT
                   end")

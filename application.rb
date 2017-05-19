@@ -1,8 +1,7 @@
 require 'sinatra'
 require 'sinatra/namespace'
 require 'json'
-require './kernel'
-require './commander'
+require './requirer.rb'
 
 get '/' do
   erb :index
