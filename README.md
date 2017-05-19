@@ -11,6 +11,8 @@ _**REPL**_ -> A Read–Eval–Print Loop (REPL), also known as an interactive to
 
 Or you can see it on [heroku](https://pacific-gorge-33451.herokuapp.com/)
 
+I would like to say thank you to my friend [Arthur Silva](https://github.com/arthurfsilva) to ~~messing things up around here~~ help me to improve project security
+
 <p align="center">
 <img src="https://media.giphy.com/media/3oEjI5VtIhHvK37WYo/giphy.gif" alt="sooo nice" />
 </p>
