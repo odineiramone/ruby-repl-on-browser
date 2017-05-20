@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     backports (3.8.0)
+    minitest (5.10.2)
     multi_json (1.12.1)
     mustermann (1.0.0)
     rack (2.0.3)
@@ -25,6 +26,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  minitest
   sinatra
   sinatra-contrib
 
