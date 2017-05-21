@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/OdineiRibeiro/ruby-repl-on-browser.svg?branch=master)](https://travis-ci.org/OdineiRibeiro/ruby-repl-on-browser)
+
 # Ruby repl on browser
 
 _**REPL**_ -> A Read–Eval–Print Loop (REPL), also known as an interactive toplevel or language shell, is a simple, interactive computer programming environment that takes single user inputs (i.e. single expressions), evaluates them, and returns the result to the user (from [wikipedia](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop))
