@@ -4,7 +4,7 @@ _**REPL**_ -> A Read–Eval–Print Loop (REPL), also known as an interactive to
 
 # How to install?
 
-0. `gem install bundler`
+0. ` gem install bundler `
 1. ` bundle install `
 2. ` ruby application.rb `
 3. Visit ` localhost:4567 `
