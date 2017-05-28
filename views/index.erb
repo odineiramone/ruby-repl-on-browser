@@ -22,7 +22,7 @@
         <button type="button" class="btn btn-info" onclick="editor.setValue(' ')">Clean editor <span class="glyphicon glyphicon-erase"></span></button>
         <button type="button" class="btn btn-danger" onclick="cleanTerminal();">Clean terminal <span class="glyphicon glyphicon-remove"></span></button>
         <button type="button" class="btn btn-warning" id="save">Save code <span class="glyphicon glyphicon-save"></span></button>
-        Choose an example here
+        <span>Choose an example here</span>
         <select id="codes" onchange="loadCode(this);">
           <option id="hello">Hello World</option>
           <option id="greet">Greettings</option>
@@ -39,6 +39,11 @@
       </div>
     </div>
 
+    <div class="comments">
+      <div id="disqus_thread"></div>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
     <!-- javascript  -->
     <script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
     <script type="text/javascript" src="codemirror/plugin/codemirror/mode/ruby/ruby.js"></script>
@@ -46,5 +51,7 @@
     <script type="text/javascript" src="js/default.js"></script>
     <script type="text/javascript" src="js/example_codes.js"></script>
     <script type="text/javascript" src="js/console.js"></script>
+    <script type="text/javascript" src="js/disqus_stuff.js"></script>
+    <script id="dsq-count-scr" src="//ruby-repl.disqus.com/count.js" async></script>
   </body>
 </html>

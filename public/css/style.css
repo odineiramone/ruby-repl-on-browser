@@ -65,3 +65,9 @@ li {
   text-decoration: none;
   cursor: default;
 }
+
+.comments {
+  margin: 0 auto;
+  padding: 5%;
+  max-width: 80em;
+}
