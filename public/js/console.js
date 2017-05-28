@@ -38,7 +38,7 @@ function loadCode(select){
   switch (selected_option) {
     case 'greet': editor.setValue(codes.greet); break;
     case 'fizz':  editor.setValue(codes.fizz);  break;
-    case 'array': editor.setValue(codes.fizz);  break;
+    case 'array': editor.setValue(codes.array);  break;
     case 'love':  editor.setValue(codes.love);  break;
     case 'hello': editor.setValue("puts 'Hello World!'"); break;
     default: editor.setValue("puts 'Hello World!'");
