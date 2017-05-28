@@ -48,7 +48,7 @@ function loadCode(select){
 function saveTextAsFile() {
   var textToWrite = editor.getValue();
   var textFileAsBlob = new Blob([ textToWrite ], { type: "text/plain" });
-  var fileNameToSaveAs = 'application.rb'
+  var fileNameToSaveAs = timestampString() + '_awesome_ruby.rb'
 
   var downloadLink = document.createElement("a");
   downloadLink.download = fileNameToSaveAs;
@@ -72,3 +72,21 @@ function destroyClickedElement(event) {
   // remove the link from the DOM
   document.body.removeChild(event.target);
 }
+
+function timestampString() {
+  var date = new Date();
+  return date.timestamp();
+}
+
+Date.prototype.timestamp = function() {
+  var mm = this.getMonth() + 1; // getMonth() is zero-based
+  var dd = this.getDate();
+
+  return [this.getFullYear(),
+          (mm>9 ? '' : '0') + mm,
+          (dd>9 ? '' : '0') + dd,
+          this.getHours(),
+          this.getMinutes(),
+          this.getSeconds()
+         ].join('');
+};
