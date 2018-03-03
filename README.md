@@ -4,7 +4,12 @@
 
 _**REPL**_ -> A Read–Eval–Print Loop (REPL), also known as an interactive toplevel or language shell, is a simple, interactive computer programming environment that takes single user inputs (i.e. single expressions), evaluates them, and returns the result to the user (from [wikipedia](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop))
 
-# How to install?
+## Made with
+
+  - Ruby 2.5.0
+  - Rails 5.1.4
+
+## How to install?
 
 0. ` gem install bundler `
 1. ` bundle install `
