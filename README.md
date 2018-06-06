@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/odineiramone/ruby-repl-on-browser.svg?branch=master)](https://travis-ci.org/OdineiRibeiro/ruby-repl-on-browser)
+[![Build Status](https://travis-ci.org/odineiramone/ruby-repl-on-browser.svg?branch=master)](https://travis-ci.org/odineiramone/ruby-repl-on-browser)
 
 # Ruby repl on browser
 
