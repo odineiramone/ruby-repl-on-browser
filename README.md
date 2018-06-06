@@ -6,8 +6,8 @@ _**REPL**_ -> A Read–Eval–Print Loop (REPL), also known as an interactive to
 
 ## Made with
 
-  - Ruby 2.5.0
-  - Rails 5.1.4
+  - Ruby 2.5.1
+  - Sinatra
 
 ## How to install?
 
