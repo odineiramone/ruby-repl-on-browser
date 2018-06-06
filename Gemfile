@@ -2,8 +2,9 @@
 
 source 'https://rubygems.org'
 
-ruby '2.4.1'
+ruby '2.5.1'
 
 gem 'minitest'
-gem 'sinatra', '~> 2.0.1'
+gem 'sinatra', '~> 2.0.2'
 gem 'sinatra-contrib'
+gem 'rack-test'
